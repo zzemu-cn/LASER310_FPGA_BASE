@@ -1,0 +1,433 @@
+Partition Merge report for de2_70
+Tue Jan 29 08:47:41 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Connections to In-System Debugging Instance "auto_signaltap_0"
+  5. Partition Merge Partition Statistics
+  6. Partition Merge Resource Usage Summary
+  7. Partition Merge RAM Summary
+  8. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Partition Merge Summary                                                               ;
++------------------------------------+--------------------------------------------------+
+; Partition Merge Status             ; Successful - Tue Jan 29 08:47:41 2019            ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; de2_70                                           ;
+; Top-level Entity Name              ; LASER310_TOP                                     ;
+; Family                             ; Cyclone II                                       ;
+; Total logic elements               ; 5,876                                            ;
+;     Total combinational functions  ; 4,571                                            ;
+;     Dedicated logic registers      ; 2,667                                            ;
+; Total registers                    ; 2667                                             ;
+; Total pins                         ; 144                                              ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 492,544                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                                ;
+; Total PLLs                         ; 2                                                ;
++------------------------------------+--------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Source File       ; Post-Fit               ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                                                                                                     ;
++---------------------+---------------+-----------+----------------+-------------------+--------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Name                ; Type          ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection                          ; Details                                                                                                                                                        ;
++---------------------+---------------+-----------+----------------+-------------------+--------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; CPU_A[0]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[0]    ; N/A                                                                                                                                                            ;
+; CPU_A[0]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[0]    ; N/A                                                                                                                                                            ;
+; CPU_A[10]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[10]   ; N/A                                                                                                                                                            ;
+; CPU_A[10]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[10]   ; N/A                                                                                                                                                            ;
+; CPU_A[11]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[11]   ; N/A                                                                                                                                                            ;
+; CPU_A[11]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[11]   ; N/A                                                                                                                                                            ;
+; CPU_A[12]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[12]~_wirecell                        ; N/A                                                                                                                                                            ;
+; CPU_A[12]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[12]~_wirecell                        ; N/A                                                                                                                                                            ;
+; CPU_A[13]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[13]   ; N/A                                                                                                                                                            ;
+; CPU_A[13]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[13]   ; N/A                                                                                                                                                            ;
+; CPU_A[14]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[14]   ; N/A                                                                                                                                                            ;
+; CPU_A[14]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[14]   ; N/A                                                                                                                                                            ;
+; CPU_A[15]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[15]   ; N/A                                                                                                                                                            ;
+; CPU_A[15]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[15]   ; N/A                                                                                                                                                            ;
+; CPU_A[1]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[1]    ; N/A                                                                                                                                                            ;
+; CPU_A[1]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[1]    ; N/A                                                                                                                                                            ;
+; CPU_A[2]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[2]    ; N/A                                                                                                                                                            ;
+; CPU_A[2]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[2]    ; N/A                                                                                                                                                            ;
+; CPU_A[3]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[3]    ; N/A                                                                                                                                                            ;
+; CPU_A[3]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[3]    ; N/A                                                                                                                                                            ;
+; CPU_A[4]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[4]    ; N/A                                                                                                                                                            ;
+; CPU_A[4]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[4]    ; N/A                                                                                                                                                            ;
+; CPU_A[5]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[5]    ; N/A                                                                                                                                                            ;
+; CPU_A[5]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[5]    ; N/A                                                                                                                                                            ;
+; CPU_A[6]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[6]    ; N/A                                                                                                                                                            ;
+; CPU_A[6]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[6]    ; N/A                                                                                                                                                            ;
+; CPU_A[7]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[7]    ; N/A                                                                                                                                                            ;
+; CPU_A[7]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[7]    ; N/A                                                                                                                                                            ;
+; CPU_A[8]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[8]    ; N/A                                                                                                                                                            ;
+; CPU_A[8]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[8]    ; N/A                                                                                                                                                            ;
+; CPU_A[9]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[9]    ; N/A                                                                                                                                                            ;
+; CPU_A[9]            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[9]    ; N/A                                                                                                                                                            ;
+; CPU_DI[0]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_DI[0]                                  ; N/A                                                                                                                                                            ;
+; CPU_DI[0]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_DI[0]                                  ; N/A                                                                                                                                                            ;
+; CPU_DI[1]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_DI[1]                                  ; N/A                                                                                                                                                            ;
+; CPU_DI[1]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_DI[1]                                  ; N/A                                                                                                                                                            ;
+; CPU_DI[2]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_DI[2]                                  ; N/A                                                                                                                                                            ;
+; CPU_DI[2]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_DI[2]                                  ; N/A                                                                                                                                                            ;
+; CPU_DI[3]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_DI[3]                                  ; N/A                                                                                                                                                            ;
+; CPU_DI[3]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_DI[3]                                  ; N/A                                                                                                                                                            ;
+; CPU_DI[4]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_DI[4]                                  ; N/A                                                                                                                                                            ;
+; CPU_DI[4]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_DI[4]                                  ; N/A                                                                                                                                                            ;
+; CPU_DI[5]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_DI[5]                                  ; N/A                                                                                                                                                            ;
+; CPU_DI[5]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_DI[5]                                  ; N/A                                                                                                                                                            ;
+; CPU_DI[6]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_DI[6]                                  ; N/A                                                                                                                                                            ;
+; CPU_DI[6]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_DI[6]                                  ; N/A                                                                                                                                                            ;
+; CPU_DI[7]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_DI[7]                                  ; N/A                                                                                                                                                            ;
+; CPU_DI[7]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_DI[7]                                  ; N/A                                                                                                                                                            ;
+; CPU_DO[0]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[0] ; N/A                                                                                                                                                            ;
+; CPU_DO[0]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[0] ; N/A                                                                                                                                                            ;
+; CPU_DO[1]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[1] ; N/A                                                                                                                                                            ;
+; CPU_DO[1]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[1] ; N/A                                                                                                                                                            ;
+; CPU_DO[2]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[2] ; N/A                                                                                                                                                            ;
+; CPU_DO[2]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[2] ; N/A                                                                                                                                                            ;
+; CPU_DO[3]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[3] ; N/A                                                                                                                                                            ;
+; CPU_DO[3]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[3] ; N/A                                                                                                                                                            ;
+; CPU_DO[4]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[4] ; N/A                                                                                                                                                            ;
+; CPU_DO[4]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[4] ; N/A                                                                                                                                                            ;
+; CPU_DO[5]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[5] ; N/A                                                                                                                                                            ;
+; CPU_DO[5]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[5] ; N/A                                                                                                                                                            ;
+; CPU_DO[6]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[6] ; N/A                                                                                                                                                            ;
+; CPU_DO[6]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[6] ; N/A                                                                                                                                                            ;
+; CPU_DO[7]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[7] ; N/A                                                                                                                                                            ;
+; CPU_DO[7]           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[7] ; N/A                                                                                                                                                            ;
+; CPU_IORQ            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|iorq_n                        ; N/A                                                                                                                                                            ;
+; CPU_IORQ            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|iorq_n                        ; N/A                                                                                                                                                            ;
+; CPU_MREQ            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|mreq_n                        ; N/A                                                                                                                                                            ;
+; CPU_MREQ            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|mreq_n                        ; N/A                                                                                                                                                            ;
+; CPU_RD              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|rd_n                          ; N/A                                                                                                                                                            ;
+; CPU_RD              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|rd_n                          ; N/A                                                                                                                                                            ;
+; CPU_WR              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|wr_n                          ; N/A                                                                                                                                                            ;
+; CPU_WR              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; tv80s:Z80CPU|wr_n                          ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[0]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[0]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[0]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[0]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[10]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[10]                                  ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[10]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[10]                                  ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[11]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[11]                                  ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[11]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[11]                                  ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[12]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[12]~_wirecell                        ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[12]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[12]~_wirecell                        ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[13]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[13]                                  ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[13]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[13]                                  ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[14]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[14]                                  ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[14]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[14]                                  ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[15]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; comb~65                                    ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[15]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; comb~65                                    ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[16]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; comb~66                                    ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[16]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; comb~66                                    ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[17]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; comb~67                                    ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[17]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; comb~67                                    ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[18]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; comb~68                                    ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[18]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; comb~68                                    ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[1]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[1]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[1]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[1]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[2]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[2]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[2]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[2]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[3]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[3]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[3]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[3]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[4]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[4]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[4]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[4]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[5]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[5]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[5]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[5]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[6]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[6]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[6]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[6]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[7]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[7]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[7]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[7]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[8]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[8]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[8]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[8]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[9]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[9]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_ADDRESS[9]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CPU_A[9]                                   ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[0]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[0]~24                           ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[0]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[0]~24                           ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[10]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[10]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[10]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[10]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[11]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[11]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[11]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[11]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[12]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[12]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[12]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[12]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[13]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[13]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[13]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[13]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[14]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[14]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[14]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[14]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[15]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[15]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[15]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[15]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[16]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[16]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[16]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[16]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[17]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[17]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[17]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[17]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[18]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[18]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[18]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[18]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[19]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[19]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[19]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[19]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[1]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[1]~25                           ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[1]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[1]~25                           ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[20]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[20]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[20]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[20]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[21]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[21]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[21]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[21]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[22]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[22]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[22]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[22]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[23]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[23]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[23]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[23]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[24]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[24]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[24]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[24]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[25]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[25]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[25]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[25]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[26]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[26]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[26]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[26]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[27]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[27]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[27]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[27]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[28]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[28]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[28]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[28]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[29]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[29]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[29]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[29]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[2]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[2]~26                           ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[2]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[2]~26                           ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[30]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[30]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[30]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[30]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[31]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[31]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[31]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[31]                             ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[3]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[3]~27                           ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[3]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[3]~27                           ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[4]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[4]~28                           ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[4]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[4]~28                           ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[5]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[5]~29                           ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[5]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[5]~29                           ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[6]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[6]~30                           ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[6]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[6]~30                           ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[7]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[7]~31                           ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[7]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[7]~31                           ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[8]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[8]                              ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[8]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[8]                              ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[9]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[9]                              ; N/A                                                                                                                                                            ;
+; SSRAM_DATA[9]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_DATA[9]                              ; N/A                                                                                                                                                            ;
+; SSRAM_OE_N          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_OE_N~reg0_wirecell                   ; N/A                                                                                                                                                            ;
+; SSRAM_OE_N          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; SSRAM_OE_N~reg0_wirecell                   ; N/A                                                                                                                                                            ;
+; SSRAM_RW_N          ; pre-synthesis ; missing   ; Top            ; post-synthesis    ; GND                                        ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; SSRAM_RW_N          ; pre-synthesis ; missing   ; Top            ; post-synthesis    ; GND                                        ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; trap                ; pre-synthesis ; connected ; Top            ; post-synthesis    ; trap                                       ; N/A                                                                                                                                                            ;
+; trap                ; pre-synthesis ; connected ; Top            ; post-synthesis    ; trap                                       ; N/A                                                                                                                                                            ;
+; BASE_CLK            ; post-fitting  ; connected ; Top            ; post-synthesis    ; BASE_CLK                                   ; N/A                                                                                                                                                            ;
+; LATCHED_SSRAM_DO[0] ; post-fitting  ; connected ; Top            ; post-synthesis    ; LATCHED_SSRAM_DO[0]                        ; N/A                                                                                                                                                            ;
+; LATCHED_SSRAM_DO[0] ; post-fitting  ; connected ; Top            ; post-synthesis    ; LATCHED_SSRAM_DO[0]                        ; N/A                                                                                                                                                            ;
+; LATCHED_SSRAM_DO[1] ; post-fitting  ; connected ; Top            ; post-synthesis    ; LATCHED_SSRAM_DO[1]                        ; N/A                                                                                                                                                            ;
+; LATCHED_SSRAM_DO[1] ; post-fitting  ; connected ; Top            ; post-synthesis    ; LATCHED_SSRAM_DO[1]                        ; N/A                                                                                                                                                            ;
+; LATCHED_SSRAM_DO[2] ; post-fitting  ; connected ; Top            ; post-synthesis    ; LATCHED_SSRAM_DO[2]                        ; N/A                                                                                                                                                            ;
+; LATCHED_SSRAM_DO[2] ; post-fitting  ; connected ; Top            ; post-synthesis    ; LATCHED_SSRAM_DO[2]                        ; N/A                                                                                                                                                            ;
+; LATCHED_SSRAM_DO[3] ; post-fitting  ; connected ; Top            ; post-synthesis    ; LATCHED_SSRAM_DO[3]                        ; N/A                                                                                                                                                            ;
+; LATCHED_SSRAM_DO[3] ; post-fitting  ; connected ; Top            ; post-synthesis    ; LATCHED_SSRAM_DO[3]                        ; N/A                                                                                                                                                            ;
+; LATCHED_SSRAM_DO[4] ; post-fitting  ; connected ; Top            ; post-synthesis    ; LATCHED_SSRAM_DO[4]                        ; N/A                                                                                                                                                            ;
+; LATCHED_SSRAM_DO[4] ; post-fitting  ; connected ; Top            ; post-synthesis    ; LATCHED_SSRAM_DO[4]                        ; N/A                                                                                                                                                            ;
+; LATCHED_SSRAM_DO[5] ; post-fitting  ; connected ; Top            ; post-synthesis    ; LATCHED_SSRAM_DO[5]                        ; N/A                                                                                                                                                            ;
+; LATCHED_SSRAM_DO[5] ; post-fitting  ; connected ; Top            ; post-synthesis    ; LATCHED_SSRAM_DO[5]                        ; N/A                                                                                                                                                            ;
+; LATCHED_SSRAM_DO[6] ; post-fitting  ; connected ; Top            ; post-synthesis    ; LATCHED_SSRAM_DO[6]                        ; N/A                                                                                                                                                            ;
+; LATCHED_SSRAM_DO[6] ; post-fitting  ; connected ; Top            ; post-synthesis    ; LATCHED_SSRAM_DO[6]                        ; N/A                                                                                                                                                            ;
+; LATCHED_SSRAM_DO[7] ; post-fitting  ; connected ; Top            ; post-synthesis    ; LATCHED_SSRAM_DO[7]                        ; N/A                                                                                                                                                            ;
+; LATCHED_SSRAM_DO[7] ; post-fitting  ; connected ; Top            ; post-synthesis    ; LATCHED_SSRAM_DO[7]                        ; N/A                                                                                                                                                            ;
++---------------------+---------------+-----------+----------------+-------------------+--------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                                                      ;
++---------------------------------------------+--------+------------------+--------------------------------+--------------------------------+
+; Statistic                                   ; Top    ; sld_hub:auto_hub ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
++---------------------------------------------+--------+------------------+--------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 4115   ; 144              ; 1645                           ; 0                              ;
+;                                             ;        ;                  ;                                ;                                ;
+; Total combinational functions               ; 3893   ; 120              ; 558                            ; 0                              ;
+; Logic element usage by number of LUT inputs ;        ;                  ;                                ;                                ;
+;     -- 4 input functions                    ; 2480   ; 55               ; 290                            ; 0                              ;
+;     -- 3 input functions                    ; 745    ; 28               ; 180                            ; 0                              ;
+;     -- <=2 input functions                  ; 668    ; 37               ; 88                             ; 0                              ;
+;                                             ;        ;                  ;                                ;                                ;
+; Logic elements by mode                      ;        ;                  ;                                ;                                ;
+;     -- normal mode                          ; 3519   ; 112              ; 512                            ; 0                              ;
+;     -- arithmetic mode                      ; 374    ; 8                ; 46                             ; 0                              ;
+;                                             ;        ;                  ;                                ;                                ;
+; Total registers                             ; 1153   ; 86               ; 1428                           ; 0                              ;
+;     -- Dedicated logic registers            ; 1153   ; 86               ; 1428                           ; 0                              ;
+;                                             ;        ;                  ;                                ;                                ;
+; Virtual pins                                ; 0      ; 0                ; 0                              ; 0                              ;
+; I/O pins                                    ; 144    ; 0                ; 0                              ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0      ; 0                ; 0                              ; 0                              ;
+; Total memory bits                           ; 442368 ; 0                ; 50176                          ; 0                              ;
+; Total RAM block bits                        ; 0      ; 0                ; 0                              ; 0                              ;
+; JTAG                                        ; 1      ; 0                ; 0                              ; 0                              ;
+; PLL                                         ; 0      ; 0                ; 0                              ; 2                              ;
+;                                             ;        ;                  ;                                ;                                ;
+; Connections                                 ;        ;                  ;                                ;                                ;
+;     -- Input Connections                    ; 524    ; 128              ; 2024                           ; 2                              ;
+;     -- Registered Input Connections         ; 465    ; 97               ; 1646                           ; 0                              ;
+;     -- Output Connections                   ; 1944   ; 209              ; 2                              ; 523                            ;
+;     -- Registered Output Connections        ; 70     ; 208              ; 0                              ; 0                              ;
+;                                             ;        ;                  ;                                ;                                ;
+; Internal Connections                        ;        ;                  ;                                ;                                ;
+;     -- Total Connections                    ; 21295  ; 862              ; 8087                           ; 525                            ;
+;     -- Registered Connections               ; 8742   ; 641              ; 6297                           ; 0                              ;
+;                                             ;        ;                  ;                                ;                                ;
+; External Connections                        ;        ;                  ;                                ;                                ;
+;     -- Top                                  ; 0      ; 119              ; 1824                           ; 525                            ;
+;     -- sld_hub:auto_hub                     ; 119    ; 16               ; 202                            ; 0                              ;
+;     -- sld_signaltap:auto_signaltap_0       ; 1824   ; 202              ; 0                              ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 525    ; 0                ; 0                              ; 0                              ;
+;                                             ;        ;                  ;                                ;                                ;
+; Partition Interface                         ;        ;                  ;                                ;                                ;
+;     -- Input Ports                          ; 24     ; 19               ; 253                            ; 2                              ;
+;     -- Output Ports                         ; 121    ; 37               ; 206                            ; 3                              ;
+;     -- Bidir Ports                          ; 40     ; 0                ; 0                              ; 0                              ;
+;                                             ;        ;                  ;                                ;                                ;
+; Registered Ports                            ;        ;                  ;                                ;                                ;
+;     -- Registered Input Ports               ; 0      ; 4                ; 201                            ; 0                              ;
+;     -- Registered Output Ports              ; 0      ; 26               ; 197                            ; 0                              ;
+;                                             ;        ;                  ;                                ;                                ;
+; Port Connectivity                           ;        ;                  ;                                ;                                ;
+;     -- Input Ports driven by GND            ; 0      ; 1                ; 2                              ; 0                              ;
+;     -- Output Ports driven by GND           ; 0      ; 1                ; 0                              ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0      ; 0                ; 0                              ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0      ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Source           ; 0      ; 1                ; 35                             ; 0                              ;
+;     -- Output Ports with no Source          ; 0      ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0      ; 2                ; 40                             ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0      ; 15               ; 197                            ; 0                              ;
++---------------------------------------------+--------+------------------+--------------------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++--------------------------------------------------------+
+; Partition Merge Resource Usage Summary                 ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 5,876    ;
+;                                             ;          ;
+; Total combinational functions               ; 4571     ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 2825     ;
+;     -- 3 input functions                    ; 953      ;
+;     -- <=2 input functions                  ; 793      ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 4143     ;
+;     -- arithmetic mode                      ; 428      ;
+;                                             ;          ;
+; Total registers                             ; 2667     ;
+;     -- Dedicated logic registers            ; 2667     ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 144      ;
+; Total memory bits                           ; 492544   ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+; Total PLLs                                  ; 2        ;
+;     -- PLLs                                 ; 2        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; BASE_CLK ;
+; Maximum fan-out                             ; 1131     ;
+; Total fan-out                               ; 27989    ;
+; Average fan-out                             ; 3.68     ;
++---------------------------------------------+----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                                                                           ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+----------------+
+; Name                                                                                                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF            ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+----------------+
+; MC6847_VGA:MC6847_VGA|PIXEL_DISPLAY:PIXEL_DISPLAY|CHAR_GEN:CHAR_GEN|CHAR_GEN_ROM:CHAR_GEN_ROM|char_rom_4k_altera:char_rom|altsyncram:altsyncram_component|altsyncram_aqb1:auto_generated|ALTSYNCRAM   ; AUTO ; ROM              ; 4096         ; 8            ; --           ; --           ; 32768  ; charrom_4k.mif ;
+; cass_ram_16k_altera:cass_buf|altsyncram:altsyncram_component|altsyncram_1qg1:auto_generated|ALTSYNCRAM                                                                                                ; AUTO ; Single Port      ; 16384        ; 8            ; --           ; --           ; 131072 ; cass_ram.mif   ;
+; dos_rom_altera:dos_rom|altsyncram:altsyncram_component|altsyncram_mfb1:auto_generated|ALTSYNCRAM                                                                                                      ; AUTO ; ROM              ; 8192         ; 8            ; --           ; --           ; 65536  ; dosrom.mif     ;
+; ram_2k_altera:sys_ram_2k|altsyncram:altsyncram_component|altsyncram_vfe1:auto_generated|ALTSYNCRAM                                                                                                    ; AUTO ; Single Port      ; 2048         ; 8            ; --           ; --           ; 16384  ; None           ;
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_8c54:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 512          ; 98           ; 512          ; 98           ; 50176  ; None           ;
+; sys_rom_altera:sys_rom|altsyncram:altsyncram_component|altsyncram_2ib1:auto_generated|ALTSYNCRAM                                                                                                      ; AUTO ; ROM              ; 16384        ; 8            ; --           ; --           ; 131072 ; sysrom.mif     ;
+; vram_8k_altera:vram_8k|altsyncram:altsyncram_component|altsyncram_kk62:auto_generated|ALTSYNCRAM                                                                                                      ; AUTO ; True Dual Port   ; 8192         ; 8            ; 8192         ; 8            ; 65536  ; None           ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+----------------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Partition Merge
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Tue Jan 29 08:47:37 2019
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off de2_70 -c de2_70 --merge=on
+Warning (35010): Previously generated Fitter netlist for partition "Top" is older than current Synthesis netlist -- using the current Synthesis netlist instead to ensure that the latest source changes are included
+    Info (35011): Set the option to Ignore source file changes to force the Quartus II software to always use a previously generated Fitter netlist
+Info (35007): Using synthesis netlist for partition "Top"
+Info (35007): Using synthesis netlist for partition "sld_hub:auto_hub"
+Info (35007): Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 195 of its 197 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 2 missing sources or connections.
+Info (35002): Resolved and merged 3 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 2 node(s), including 0 DDIO, 2 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SWITCH[3]"
+    Warning (15610): No output dependent on input pin "SWITCH[4]"
+    Warning (15610): No output dependent on input pin "SWITCH[5]"
+    Warning (15610): No output dependent on input pin "SWITCH[6]"
+    Warning (15610): No output dependent on input pin "SWITCH[7]"
+    Warning (15610): No output dependent on input pin "SWITCH[8]"
+    Warning (15610): No output dependent on input pin "SWITCH[9]"
+    Warning (15610): No output dependent on input pin "UART_RTS"
+    Warning (15610): No output dependent on input pin "BUTTON_N[1]"
+    Warning (15610): No output dependent on input pin "BUTTON_N[2]"
+    Warning (15610): No output dependent on input pin "BUTTON_N[3]"
+Info (21057): Implemented 6351 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 24 input pins
+    Info (21059): Implemented 84 output pins
+    Info (21060): Implemented 40 bidirectional pins
+    Info (21061): Implemented 5990 logic cells
+    Info (21064): Implemented 210 RAM segments
+    Info (21065): Implemented 2 PLLs
+Info: Quartus II 64-Bit Partition Merge was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4686 megabytes
+    Info: Processing ended: Tue Jan 29 08:47:41 2019
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:05
+
+

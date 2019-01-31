@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Tue Jan 29 08:47:41 2019
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : de2_70
+Top-level Entity Name : LASER310_TOP
+Family : Cyclone II
+Total logic elements : 5,876
+    Total combinational functions : 4,571
+    Dedicated logic registers : 2,667
+Total registers : 2667
+Total pins : 144
+Total virtual pins : 0
+Total memory bits : 492,544
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 2
