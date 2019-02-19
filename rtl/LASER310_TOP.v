@@ -2,10 +2,10 @@
 
 // 选择开发板
 //`define	DE0
-//`define	DE1
+`define	DE1
 //`define	DE2
 //`define	DE2_70
-`define	DE2_115
+//`define	DE2_115
 
 // 选择 Z80 软核
 `define	TV80
@@ -609,6 +609,8 @@ wire [7:0] InPort = 8'b0;
 // CPU
 
 `ifdef NEXTZ80
+
+assign CPU_RD = ~CPU_WR;
 
 // 输入控制信号 RESET_N INT_N NMI_N WAIT_N BUSRQ_N DI
 
